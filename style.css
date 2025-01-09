@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f3f3;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.nav_links li{
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #fa2b2b;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav_links a:hover{
+    color: #1100ff;
+}
+
+.container {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 2D Transform Effects */
+.gallery-2d .gallery-item.effect-1:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-2d .gallery-item.effect-2:hover img {
+    transform: rotate(180deg);
+}
+
+.gallery-2d .gallery-item.effect-3:hover img {
+    transform: translateX(-10px);
+}
+
+.gallery-2d .gallery-item.effect-4:hover img {
+    transform: translateY(-10px);
+}
+
+.gallery-2d .gallery-item.effect-5:hover img {
+    transform: skew(10deg, -10deg);
+}
+
+.gallery-2d .gallery-item.effect-6:hover img {
+    transform: scale(0.9) rotate(-30deg);
+}
+
+.gallery-2d .gallery-item.effect-7:hover img {
+    transform: translate(-10px, 10px);
+}
+
+.gallery-2d .gallery-item.effect-8:hover img {
+    transform: rotateY(180deg);
+}
+
+.gallery-2d .gallery-item.effect-9:hover img {
+    transform: scale(1.2) skew(-10deg);
+}
+
+/* 3D Transform Effects */
+.gallery-3d .gallery-item.effect-1:hover img {
+    transform: perspective(500px) rotateX(20deg);
+}
+
+.gallery-3d .gallery-item.effect-2:hover img {
+    transform: perspective(500px) rotateY(20deg);
+}
+
+.gallery-3d .gallery-item.effect-3:hover img {
+    transform: perspective(500px) rotateZ(15deg);
+}
+
+.gallery-3d .gallery-item.effect-4:hover img {
+    transform: perspective(700px) rotate3d(1, 1, 0, 30deg);
+}
+
+.gallery-3d .gallery-item.effect-5:hover img {
+    transform: perspective(700px) scale(1.1) rotateX(15deg);
+}
+
+.gallery-3d .gallery-item.effect-6:hover img {
+    transform: perspective(700px) scale(1.2) rotateY(-15deg);
+}
+
+/* Smooth Transition for Images */
+.gallery-item img {
+    filter: grayscale(0%);
+}
+
+.gallery-item:hover img {
+    filter: grayscale(50%);
+}
+
+/* footer */
+.footer{
+    height: 205px;
+    width: 100%;
+    background-color: #000;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    /*  */
+}
+
+.icon_set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.icon i{
+   font-size: 2rem;
+   color: rgb(255, 255, 255);
+}
+
+.icon i:hover{
+    color: #ff0000;
+ }
+
+.contact_heading{
+    margin-top: 20px;
+}
